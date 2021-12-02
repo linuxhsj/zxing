@@ -143,17 +143,19 @@ public class CaptureActivity extends AppCompatActivity implements SurfaceHolder.
         bottomLayout = findViewById(R.id.bottomLayout);
 
 
-        switchVisibility(bottomLayout, config.isShowbottomLayout());
-        switchVisibility(flashLightLayout, config.isShowFlashLight());
-        switchVisibility(albumLayout, config.isShowAlbum());
+//        switchVisibility(bottomLayout, config.isShowbottomLayout());
+//        switchVisibility(flashLightLayout, config.isShowFlashLight());
+//        switchVisibility(albumLayout, config.isShowAlbum());
 
 
         /*有闪光灯就显示手电筒按钮  否则不显示*/
-        if (isSupportCameraLedFlash(getPackageManager())) {
-            flashLightLayout.setVisibility(View.VISIBLE);
-        } else {
-            flashLightLayout.setVisibility(View.GONE);
-        }
+//        if (isSupportCameraLedFlash(getPackageManager())) {
+//            flashLightLayout.setVisibility(View.VISIBLE);
+//        } else {
+//            flashLightLayout.setVisibility(View.GONE);
+//        }
+
+        bottomLayout.setVisibility(View.GONE);//隐藏扫描页面底部菜单，不要闪光灯和相册
 
     }
 

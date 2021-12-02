@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.scanBtn:
 
                 AndPermission.with(this)
-                        .permission(Permission.CAMERA, Permission.READ_EXTERNAL_STORAGE)
+                        .permission(Permission.CAMERA/*, Permission.READ_EXTERNAL_STORAGE*/)
                         .onGranted(new Action() {
                             @Override
                             public void onAction(List<String> permissions) {
